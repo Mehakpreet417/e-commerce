@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="filter-toggle button">Filters</button> 
+        <aside id="filters" class="filters-closed">
+            <form id="filters-form">
+                <div class="filter-groups">
+                <div class="filter-group">
+                    <label for="min_price">Min Price</label>
+                    <input type="number" id="min_price" name="min_price" min="0" placeholder="Min Price">
+                </div>
+                <div class="filter-group">
+                    <label for="max_price">Max Price</label>
+                    <input type="number" id="max_price" name="max_price" min="0" placeholder="Max Price">
+                </div>
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="">All</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Books">Books</option>
+                        <option value="Clothing">Clothing</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sale_status">Sale Status</label>
+                    <select id="sale_status" name="sale_status">
+                        <option value="">All</option>
+                        <option value="On Sale">On Sale</option>
+                        <option value="Not On Sale">Not On Sale</option>
+                    </select>
+                </div>
+            </div>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+        <main>
+            <div id="product-list" class="products"></div>
+            <div id="pagination" class="pagination"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
