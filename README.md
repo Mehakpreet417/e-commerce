@@ -29,7 +29,7 @@ A product listing application with filters for price, category, and sale status,
     - Start your local server and navigate to `http://localhost/product_listing_app/index.html` in your web browser.
 
 5. Alternatively, you can access the hosted application using the following link:
-    - [Hosted Application Link](https://your-hosted-application-link.com)
+    - [Hosted Application Link](https://mehakpreet.wuaze.com)
 
 ## Usage
 
